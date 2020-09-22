@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Encryption">
+   <children>
+      <Label alignment="CENTER" layoutX="222.0" layoutY="64.0" prefHeight="20.0" prefWidth="168.0" text="encrypt image">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="exit_label" layoutX="633.0" layoutY="1.0" onMouseClicked="#handleMouseClicks" text="X">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="encrypt_text" alignment="CENTER" editable="false" layoutX="75.0" layoutY="122.0" onAction="#handleButtonClicks" prefHeight="33.0" prefWidth="382.0" promptText="load image file to encrypt">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_load" layoutX="474.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="33.0" prefWidth="150.0" text="load image file">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="text_area" accessibleRole="IMAGE_VIEW" layoutX="75.0" layoutY="166.0" prefHeight="93.0" prefWidth="503.0" promptText="message goes here...!" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="btn_encrypt" layoutX="75.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="33.0" prefWidth="251.0" text="encrypt image">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_save" layoutX="353.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="33.0" prefWidth="225.0" text="save image">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_back" alignment="CENTER" layoutX="75.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="33.0" prefWidth="503.0" text="back to menu" />
+      <Separator layoutX="1.0" layoutY="85.0" prefHeight="6.0" prefWidth="659.0" />
+      <Separator layoutX="7.0" layoutY="315.0" prefHeight="6.0" prefWidth="652.0" />
+   </children>
+</AnchorPane>
